@@ -1,0 +1,56 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "granola-to-obsidian",
+  "title": "Granola to Obsidian",
+  "description": "Paste Granola enhanced notes and save them as an Obsidian-ready markdown file in a folder you pick.",
+  "icon": "icon.png",
+  "author": "navneet_prakash",
+  "platforms": [
+    "macOS"
+  ],
+  "categories": [
+    "Productivity"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "save-granola-note",
+      "title": "Save Granola Note",
+      "subtitle": "Granola to Obsidian",
+      "description": "Convert pasted Granola enhanced notes to markdown and save into your Obsidian Meetings folder.",
+      "mode": "view",
+      "keywords": [
+        "granola",
+        "obsidian",
+        "meeting",
+        "notes"
+      ]
+    }
+  ],
+  "preferences": [
+    {
+      "name": "meetingsRoot",
+      "title": "Meetings Folder",
+      "description": "Folder whose subfolders appear in the Save To dropdown, e.g. the Meetings folder in your Obsidian vault.",
+      "type": "directory",
+      "required": true
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^2.11.1"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.2.0",
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "eslint": "^9.39.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint"
+  }
+}
