@@ -1,0 +1,1 @@
+Raycast extension to easily convert Granola notes to Obsidian notes, given the Granola "enhanced notes."
